@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="block" name="block">
+      <label for="name">TMA:</label>
+      <input type="text" id="tma" />
+    </div>
+
+    <div class="block" name="block">
+      <label for="name">MID:</label>
+      <input type="text" id="mid" />
+    </div>
+
+    <div class="block" name="block">
+      <label for="name">FINAL:</label>
+      <input type="text" id="final" />
+    </div>
+
+    <button
+      id="btn"
+      onclick="borderColorTMA();  borderColorMID(); borderColorFinal(); calculateMarks();"
+    >
+      Calculate
+    </button>
+    <h3 id="result"></h3>
+    <h3 id="state"></h3>
+  </body>
+</html>
+<script src="index.js"></script>
